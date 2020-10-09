@@ -1,0 +1,25 @@
+{
+ "creation": "2017-12-27 20:54:31.614045", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "idx": 0, 
+ "icon": "fa fa-sign-in",
+ "modified": "2017-12-27 20:55:01.983200", 
+ "modified_by": "Administrator", 
+ "module": "erpnextswiss", 
+ "name": "bankimport", 
+ "owner": "Administrator", 
+ "page_name": "bankimport", 
+ "roles": [
+  {
+   "role": "Accounts User"
+  }, 
+  {
+   "role": "System Manager"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "title": "Bank import"
+}
