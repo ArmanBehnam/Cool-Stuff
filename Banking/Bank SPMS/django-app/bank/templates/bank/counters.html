@@ -1,0 +1,20 @@
+{% if counters %}
+        <div class="col-sm-6 col-md-4">
+            <h4>Обязательная учебная программа</h4>
+
+            <i>Семинары/Факультативы:</i> {{ counters.info.study }} ({{ counters.val.seminar_attend }}/{{ counters.val.fac_attend }})  из {{ counters.info.study_needed }}<br>
+            {% if counters.info.fac_pass_needed %}
+            <i>Зачет по факультативу:</i> {{ counters.val.fac_pass }} из {{ counters.info.fac_pass_needed }}<br>
+            {% endif %}
+            <i>Отчеты по лабораторным работам:</i> {{ counters.val.lab_pass }}
+            из {{ counters.info.lab_pass_needed }}<br>
+            <i>Посещено лекций:</i> {{ counters.val.lecture_attend }}<br>
+            {% if counters.val.lecture_miss %}
+                <i>Пропущено лекций: {{ counters.val.lecture_miss }}</i> <br>
+                <i>Штраф за следующую пропущенную лекцию:</i> {{ counters.info.next_missed_lec_fine }}@<br>
+            {% endif %}
+            {% if counters.info.expected_fine > 0%}
+            <i>Ожидаемый штраф за невыполнение учебной программы: </i> {{ counters.info.expected_fine }}@
+            {% endif %}
+        </div>
+{% endif %}

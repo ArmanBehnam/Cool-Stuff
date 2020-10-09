@@ -1,0 +1,29 @@
+<table class="table table-bordered">
+    <tr>
+        <th>Дата</th>
+        {% if not viewer_role == 'receiver' %}
+            <th>Жертва</th>
+        {% endif %}
+        {% if not viewer_role == 'creator' %}
+            <th>Автор</th>
+        {% endif %}
+        <th>Сумма</th>
+        <th>Описание</th>
+        <th>Тип</th>
+    </tr>
+    {% for money in moneys %}
+        <tr>
+            <td>{{ money.get_creation_timestamp }}</td>
+            {% if not viewer_role == 'receiver' %}
+                <td>{{ money.receiver.account.long_name }}</td>
+            {% endif %}
+            {% if not viewer_role == 'creator' %}
+                <td>{{ money.related_transaction.creator.account.long_name }}</td>
+            {% endif %}
+
+            <td><span class="{% if money.value > 0 %} green{% else %}red{% endif %}">{{ money.get_value }}</span> {% include 'bank/transaction_lists/counted_marker.html' with counted=money.counted %}</td>
+            <td>{{ money.description }}</td>
+            <td>{{ money.type }}</td>
+        </tr>
+    {% endfor %}
+</table>

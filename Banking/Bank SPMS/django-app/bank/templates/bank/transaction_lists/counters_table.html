@@ -1,0 +1,34 @@
+
+<table class="table table-bordered">
+    <tr>
+        <th>Создана</th>
+        {% if not viewer_role == 'receiver' %}
+            <th>Жертва</th>
+        {% endif %}
+        {% if not viewer_role == 'creator' %}
+            <th>Автор</th>
+        {% endif %}
+        <th>Состояние</th>
+        <th>Описание</th>
+        <th>Тип</th>
+        <th>Блок</th>
+        <th>Дата</th>
+    </tr>
+    {% for counter in counters %}
+        <tr>
+            <td>{{ counter.get_creation_timestamp }}</td>
+            {% if not viewer_role == 'receiver' %}
+                <td>{{ counter.receiver.account.long_name }}</td>
+            {% endif %}
+            {% if not viewer_role == 'creator' %}
+                <td>{{ counter.related_transaction.creator.account.long_name }}</td>
+            {% endif %}
+            <td><span class="{% if counter.value > 0 %} green{% else %}red{% endif %}">{{ counter.get_value }}</span> {% include 'bank/transaction_lists/counted_marker.html' with counted=counter.counted %}</td>
+            <td>{{ counter.description }}</td>
+            <td>{{ counter.type }}</td>
+            <td>{% if counter.attendance_block %}{{ counter.attendance_block }}{% else %}---{% endif %}</td>
+            <td>{{ counter.get_date }}</td>
+
+        </tr>
+    {% endfor %}
+</table>

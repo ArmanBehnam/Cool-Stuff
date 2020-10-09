@@ -1,0 +1,43 @@
+{% extends "bank/base.html" %}
+{% load render_table from django_tables2 %}
+
+
+
+{% block content %}
+    <div class="row">
+
+        {% for student in students %}
+            {% if forloop.counter in markup.starttable %}
+                <div class="col-md-6">
+                <h4>{{ student.account.party }} Отряд</h4>
+                <table class="table">
+                <tr>
+                    <th>Пионер</th>
+                    {% if can_see_balance %}
+                        <th>Баланс</th>
+                    {% endif %}
+                </tr>
+            {% endif %}
+        <tr>
+            <td><a href="{% url 'bank:user' student.username%}">{{ student.account.long_name }}</a></td>
+            {% if can_see_balance %}
+                <td>{{ student.account.get_balance }}</td>
+            {% endif %}
+        </tr>
+
+        {% if forloop.counter in markup.endtable %}
+            </table>
+            </div>
+        {% endif %}
+
+        {% if forloop.counter == markup.rowbreak %}
+            </div>
+            <div class="row">
+    {% endif %}
+
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

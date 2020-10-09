@@ -1,0 +1,34 @@
+{% extends "bank/base.html" %}
+
+{% block content %}
+    {% load bootstrap3 %}
+
+    <h1>Личный Перевод</h1>
+
+    <form action={% url 'bank:add_transaction' type_name=type_name %} method="post">
+
+        {% csrf_token %}
+        {{ formset.management_form }}
+        {{ formset.forms.0.creator_username.as_hidden }}
+
+        <div class="row">
+            <div class="col-md-4">
+                {% bootstrap_field  formset.forms.0.description %}
+            </div>
+            <div class="col-md-4">
+                  {% bootstrap_field  formset.forms.0.receiver_username %}
+            </div>
+            <div class="col-md-4">
+                 {% bootstrap_field  formset.forms.0.value %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" value="Начислить!" class="btn btn-default"/>
+            </div>
+        </div>
+    </form>
+
+
+{% endblock %}

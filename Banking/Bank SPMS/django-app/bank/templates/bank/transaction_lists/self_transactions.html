@@ -1,0 +1,9 @@
+{% extends "bank/base.html" %}
+
+{% block content %}
+
+
+    <h3>{{ request.user.account.long_name }} </h3>
+
+    {% include 'bank/transaction_lists/transactions_tabs.html' %}
+{% endblock %}
