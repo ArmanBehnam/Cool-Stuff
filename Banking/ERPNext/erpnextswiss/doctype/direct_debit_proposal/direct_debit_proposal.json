@@ -1,0 +1,178 @@
+{
+ "creation": "2018-08-29 16:12:57.312340",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "title",
+  "receive_to_account",
+  "column_main",
+  "date",
+  "company",
+  "section_invoices",
+  "sales_invoices",
+  "section_payments",
+  "payments",
+  "section_intermediate_account",
+  "use_intermediate",
+  "column_intermediate_account",
+  "intermediate_account",
+  "skonto_account",
+  "skonto_cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Direct Debit Proposal",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "receive_to_account",
+   "fieldtype": "Link",
+   "label": "Receive to Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_main",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_invoices",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_invoices",
+   "fieldtype": "Table",
+   "label": "Sales Invoices",
+   "options": "Direct Debit Proposal Sales Invoice"
+  },
+  {
+   "fieldname": "section_payments",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments",
+   "options": "Direct Debit Proposal Payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_intermediate_account",
+   "fieldtype": "Section Break",
+   "label": "Intermediate Account"
+  },
+  {
+   "default": "0",
+   "fieldname": "use_intermediate",
+   "fieldtype": "Check",
+   "label": "Close Invoice on Intermediate Account"
+  },
+  {
+   "fieldname": "column_intermediate_account",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.use_intermediate == '1'",
+   "fieldname": "intermediate_account",
+   "fieldtype": "Link",
+   "label": "Intermediate Account",
+   "options": "Account"
+  },
+  {
+   "depends_on": "eval:doc.use_intermediate == '1'",
+   "fieldname": "skonto_account",
+   "fieldtype": "Link",
+   "label": "Skonto Account",
+   "options": "Account"
+  },
+  {
+   "depends_on": "eval:doc.use_intermediate == '1'",
+   "fieldname": "skonto_cost_center",
+   "fieldtype": "Link",
+   "label": "Skonto Cost Center",
+   "options": "Cost Center"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-04-29 21:58:33.159570",
+ "modified_by": "Administrator",
+ "module": "ERPNextSwiss",
+ "name": "Direct Debit Proposal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}
