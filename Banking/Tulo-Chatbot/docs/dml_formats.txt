@@ -1,0 +1,50 @@
+# setup database
+use tulo_bot
+
+# setting up collection
+db.createCollection("train")
+
+# import database
+mongoimport --db tulo_bot --collection train --file train.json
+mongoimport --db tulo_bot --collection user --file user.json
+mongoimport --db tulo_bot --collection broker --file broker.json
+mongoimport --db tulo_bot --collection trainedclassifier --file train.json
+mongoimport -h ds229078.mlab.com:29078 -d heroku_2r6cnrs1 -u heroku_2r6cnrs1 -p os02s46gjpp2b0mio9qa4o3g8g -c train --file train.json
+mongoimport -h ds229078.mlab.com:29078 -d heroku_2r6cnrs1 -u heroku_2r6cnrs1 -p os02s46gjpp2b0mio9qa4o3g8g -c user --file user.json
+mongoimport -h ds229078.mlab.com:29078 -d heroku_2r6cnrs1 -u heroku_2r6cnrs1 -p os02s46gjpp2b0mio9qa4o3g8g -c broker --file broker.json
+mongoimport -h ds229078.mlab.com:29078 -d heroku_2r6cnrs1 -u heroku_2r6cnrs1 -p os02s46gjpp2b0mio9qa4o3g8g -c trainedclassifier --file trainedclassifier.json
+
+# export database
+mongoexport --db tulo_bot -c train --out train.json
+mongoexport -h ds229078.mlab.com:29078 -d heroku_2r6cnrs1 -c train -u heroku_2r6cnrs1 -p os02s46gjpp2b0mio9qa4o3g8g -o train.json
+
+# For updating a category response :
+db.train.update({"category" : "introduction"}, {$set : {"response.0.text": [ "Hi! How can I help you with your account?", "Hey there! tell me!", "How can I help?" ]}})
+
+
+# heroku add mongolab
+heroku addons:create mongolab
+heroku addons:docs mongolab
+heroku config:get MONGODB_URI
+heroku addons:open mongolab
+
+
+# heroku add redis free tier
+heroku addons:create heroku-redis:hobby-dev
+heroku addons:docs heroku-redis
+
+
+# new relic setup
+heroku addons:create newrelic:wayne
+heroku addons:docs newrelic
+
+
+# connect via mongo shell
+mongo ds229078.mlab.com:29078/heroku_2r6cnrs1 -u heroku_2r6cnrs1 -p os02s46gjpp2b0mio9qa4o3g8g
+
+
+# to run python scripts on heroku
+this starts at /app folder by default : heroku run python
+check list of files in current folder :
+import os
+os.listdir()
