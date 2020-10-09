@@ -1,0 +1,21 @@
+{
+  "tsai": {
+    "Overview": "/",
+    "Utilities": "/utils",
+    "Data Validation": "/data.validation",
+    "Data External": "/data.external",
+    "Data Core": "/data.core",
+    "Data Transforms": "/data.transforms",
+    "Data Tabular": "/data.tabular",
+    "Metrics": "/metrics",
+    "Learner": "/learner",
+    "Optimizers": "/optimizer",
+    "rocket functions": "/rocket_functions",
+    "Layers": "/layers",
+    "Models utils": "/models_utils",
+    "ResNet": "/ResNet",
+    "InceptionTime": "/InceptionTime",
+    "FCN": "/FCN",
+    "ResCNN": "/ResCNN"
+  }
+}
