@@ -1,0 +1,13 @@
+appdirs==1.4.3
+Django==2.2.10
+django-bootstrap3==11.1.0
+django-tables2==2.0.6
+lorem-ipsum-generator==0.3
+packaging==16.8
+psycopg2==2.8.3
+pyparsing==2.2.0
+pytz==2017.2
+six==1.10.0
+sqlparse==0.3.0
+transliterate==1.9
+uWSGI==2.0.18
