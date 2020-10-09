@@ -1,0 +1,119 @@
+{
+ "creation": "2018-08-30 22:05:11.555418",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "receiver",
+  "receiver_address_line1",
+  "receiver_address_line2",
+  "receiver_country",
+  "column_transaction_details",
+  "iban",
+  "amount",
+  "currency",
+  "reference",
+  "execution_date",
+  "bic",
+  "payment_type",
+  "section_esr",
+  "esr_participation_number",
+  "esr_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "receiver",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Receiver"
+  },
+  {
+   "fieldname": "receiver_address_line1",
+   "fieldtype": "Data",
+   "label": "Receiver Address Line 1"
+  },
+  {
+   "fieldname": "receiver_address_line2",
+   "fieldtype": "Data",
+   "label": "Receiver Address Line 2"
+  },
+  {
+   "fieldname": "receiver_country",
+   "fieldtype": "Link",
+   "label": "Receiver Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "column_transaction_details",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reference"
+  },
+  {
+   "fieldname": "execution_date",
+   "fieldtype": "Date",
+   "label": "Execution Date"
+  },
+  {
+   "fieldname": "bic",
+   "fieldtype": "Data",
+   "label": "BIC"
+  },
+  {
+   "default": "SEPA",
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "SEPA\nIBAN\nESR"
+  },
+  {
+   "fieldname": "section_esr",
+   "fieldtype": "Section Break",
+   "label": "ESR"
+  },
+  {
+   "fieldname": "esr_participation_number",
+   "fieldtype": "Data",
+   "label": "ESR Participation Number"
+  },
+  {
+   "fieldname": "esr_reference",
+   "fieldtype": "Data",
+   "label": "ESR Reference"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-02-08 20:26:33.407628",
+ "modified_by": "Administrator",
+ "module": "ERPNextSwiss",
+ "name": "Payment Proposal Payment",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,482 @@
+{
+ "autoname": "field:title",
+ "creation": "2018-01-03 22:22:53.439217",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "company",
+  "column_break_1",
+  "vat_type",
+  "section_break_period",
+  "start_date",
+  "column_break_2",
+  "end_date",
+  "section_revenue",
+  "total_revenue",
+  "non_taxable_revenue",
+  "section_deductions",
+  "tax_free_services",
+  "revenue_abroad",
+  "transfers",
+  "non_taxable_services",
+  "losses",
+  "misc",
+  "total_deductions",
+  "taxable_revenue",
+  "section_tax_calculation",
+  "normal_amount",
+  "reduced_amount",
+  "lodging_amount",
+  "amount_1",
+  "amount_2",
+  "additional_amount",
+  "column_break_3",
+  "normal_rate",
+  "reduced_rate",
+  "lodging_rate",
+  "rate_1",
+  "rate_2",
+  "column_break_4",
+  "normal_tax",
+  "reduced_tax",
+  "lodging_tax",
+  "tax_1",
+  "tax_2",
+  "additional_tax",
+  "section_summary",
+  "total_tax",
+  "pretax_material",
+  "pretax_investments",
+  "missing_pretax",
+  "pretax_correction_mixed",
+  "pretax_correction_other",
+  "form_1050",
+  "form_1055",
+  "total_pretax_reductions",
+  "payable_tax",
+  "balance",
+  "section_other_cashflows",
+  "grants",
+  "donations",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vat_type",
+   "fieldtype": "Select",
+   "label": "VAT type",
+   "options": "effective\nflat"
+  },
+  {
+   "fieldname": "section_break_period",
+   "fieldtype": "Section Break",
+   "label": "Period"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End"
+  },
+  {
+   "fieldname": "section_revenue",
+   "fieldtype": "Section Break",
+   "label": "Revenue"
+  },
+  {
+   "columns": 10,
+   "fieldname": "total_revenue",
+   "fieldtype": "Float",
+   "label": "Total revenue (200)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "non_taxable_revenue",
+   "fieldtype": "Float",
+   "label": "Non-taxable revenue (205)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_deductions",
+   "fieldtype": "Section Break",
+   "label": "Deductions"
+  },
+  {
+   "fieldname": "tax_free_services",
+   "fieldtype": "Float",
+   "label": "Tax-free services (220)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "revenue_abroad",
+   "fieldtype": "Float",
+   "label": "Revenue abroad (221)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "transfers",
+   "fieldtype": "Float",
+   "label": "Transfers (225)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "non_taxable_services",
+   "fieldtype": "Float",
+   "label": "Non-taxable services (230)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "losses",
+   "fieldtype": "Float",
+   "label": "Losses (235)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "misc",
+   "fieldtype": "Float",
+   "label": "Miscellaneous (280)",
+   "precision": "2"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_deductions",
+   "fieldtype": "Float",
+   "label": "Total deductions (289)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "default": "0.0",
+   "fieldname": "taxable_revenue",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Taxable revenue (299)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_tax_calculation",
+   "fieldtype": "Section Break",
+   "label": "Tax calculation"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "normal_amount",
+   "fieldtype": "Float",
+   "label": "Normal (302)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "reduced_amount",
+   "fieldtype": "Float",
+   "label": "Reduced (312)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "lodging_amount",
+   "fieldtype": "Float",
+   "label": "Lodging (342)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "amount_1",
+   "fieldtype": "Float",
+   "label": "Amount 1 (322)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "amount_2",
+   "fieldtype": "Float",
+   "label": "Amount 2 (332)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "additional_amount",
+   "fieldtype": "Float",
+   "label": "Additional (382)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "7.7",
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "normal_rate",
+   "fieldtype": "Percent",
+   "label": "Normal rate (%)"
+  },
+  {
+   "default": "2.5",
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "reduced_rate",
+   "fieldtype": "Percent",
+   "label": "Reduced rate (%)"
+  },
+  {
+   "default": "3.8",
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "lodging_rate",
+   "fieldtype": "Percent",
+   "label": "Lodging rate (%)"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "rate_1",
+   "fieldtype": "Percent",
+   "label": "Rate 1 (%)"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "rate_2",
+   "fieldtype": "Percent",
+   "label": "Rate 2 (%)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "normal_tax",
+   "fieldtype": "Float",
+   "label": "Normal tax (300)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "reduced_tax",
+   "fieldtype": "Float",
+   "label": "Reduced tax (310)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "lodging_tax",
+   "fieldtype": "Float",
+   "label": "Lodging tax (340)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "tax_1",
+   "fieldtype": "Float",
+   "label": "Tax 1 (320)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "tax_2",
+   "fieldtype": "Float",
+   "label": "Tax 2 (330)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_tax",
+   "fieldtype": "Float",
+   "label": "Additional tax (380)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_summary",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_tax",
+   "fieldtype": "Float",
+   "label": "Total tax (399)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "pretax_material",
+   "fieldtype": "Float",
+   "label": "Pretax material and services (400)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "pretax_investments",
+   "fieldtype": "Float",
+   "label": "Pretax investments (405)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "missing_pretax",
+   "fieldtype": "Float",
+   "label": "Missing pretax (410)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "pretax_correction_mixed",
+   "fieldtype": "Float",
+   "label": "Pretax correction mixed (415)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.vat_type == 'effective'",
+   "fieldname": "pretax_correction_other",
+   "fieldtype": "Float",
+   "label": "Pretax correction other (420)",
+   "precision": "2"
+  },
+  {
+   "default": "0.0",
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "form_1050",
+   "fieldtype": "Float",
+   "label": "Form 1050 (470)",
+   "precision": "2"
+  },
+  {
+   "default": "0.0",
+   "depends_on": "eval:doc.vat_type == 'flat'",
+   "fieldname": "form_1055",
+   "fieldtype": "Float",
+   "label": "Form 1055 (471)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_pretax_reductions",
+   "fieldtype": "Float",
+   "label": "Total pretax reductions (479)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "payable_tax",
+   "fieldtype": "Float",
+   "label": "Payable tax (500)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Float",
+   "label": "Balance (510)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_other_cashflows",
+   "fieldtype": "Section Break",
+   "label": "Other cashflows"
+  },
+  {
+   "fieldname": "grants",
+   "fieldtype": "Float",
+   "label": "Grants (900)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "donations",
+   "fieldtype": "Float",
+   "label": "Donations (910)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "VAT Declaration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-04-21 15:20:04.809015",
+ "modified_by": "Administrator",
+ "module": "ERPNextSwiss",
+ "name": "VAT Declaration",
+ "owner": "lars.mueller@libracore.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

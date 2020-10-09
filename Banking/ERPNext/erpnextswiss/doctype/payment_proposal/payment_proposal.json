@@ -1,0 +1,199 @@
+{
+ "creation": "2018-08-30 21:57:26.385179",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "pay_from_account",
+  "column_main",
+  "amended_from",
+  "date",
+  "company",
+  "section_purchase_invoices",
+  "purchase_invoices",
+  "section_expenses",
+  "expenses",
+  "section_overview",
+  "total",
+  "section_payments",
+  "payments",
+  "section_options",
+  "individual_payments",
+  "use_intermediate",
+  "column_intermdiate_account",
+  "intermediate_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pay_from_account",
+   "fieldtype": "Link",
+   "label": "Pay from Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_main",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payment Proposal",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_purchase_invoices",
+   "fieldtype": "Section Break",
+   "label": "Purchase Invoices"
+  },
+  {
+   "fieldname": "purchase_invoices",
+   "fieldtype": "Table",
+   "label": "Purchase Invoices",
+   "options": "Payment Proposal Purchase Invoice"
+  },
+  {
+   "fieldname": "section_expenses",
+   "fieldtype": "Section Break",
+   "label": "Expenses"
+  },
+  {
+   "fieldname": "expenses",
+   "fieldtype": "Table",
+   "label": "Expenses",
+   "options": "Payment Proposal Expense"
+  },
+  {
+   "fieldname": "section_payments",
+   "fieldtype": "Section Break",
+   "label": "Payments"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments",
+   "options": "Payment Proposal Payment",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "use_intermediate",
+   "fieldtype": "Check",
+   "label": "Close Invoice on Intermediate Account"
+  },
+  {
+   "fieldname": "column_intermdiate_account",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.use_intermediate == '1'",
+   "fieldname": "intermediate_account",
+   "fieldtype": "Link",
+   "label": "Intermediate Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_overview",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_options",
+   "fieldtype": "Section Break",
+   "label": "Options"
+  },
+  {
+   "default": "0",
+   "fieldname": "individual_payments",
+   "fieldtype": "Check",
+   "label": "Individual payments"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-02-08 20:23:12.997408",
+ "modified_by": "Administrator",
+ "module": "ERPNextSwiss",
+ "name": "Payment Proposal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

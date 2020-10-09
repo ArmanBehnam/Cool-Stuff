@@ -1,0 +1,154 @@
+{
+ "creation": "2018-08-30 22:00:13.969254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "supplier_name",
+  "purchase_invoice",
+  "amount",
+  "column_general",
+  "due_date",
+  "currency",
+  "payment_type",
+  "section_references",
+  "esr_reference",
+  "esr_participation_number",
+  "column_references",
+  "external_reference",
+  "section_skonto",
+  "skonto_date",
+  "column_skonto",
+  "skonto_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name",
+   "options": "supplier.supplier_name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Invoice Amount",
+   "options": "currency",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_general",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "purchase_invoice.due_date",
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date",
+   "options": "purchase_invoice.due_date"
+  },
+  {
+   "fetch_from": "purchase_invoice.currency",
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency",
+   "options": "purchase_invoice.currency"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "SEPA\nIBAN\nESR"
+  },
+  {
+   "fieldname": "section_references",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "esr_reference",
+   "fieldtype": "Data",
+   "label": "ESR Reference"
+  },
+  {
+   "fieldname": "esr_participation_number",
+   "fieldtype": "Data",
+   "label": "ESR Participation Number"
+  },
+  {
+   "fieldname": "column_references",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "external_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "External Reference"
+  },
+  {
+   "fieldname": "section_skonto",
+   "fieldtype": "Section Break",
+   "label": "Skonto"
+  },
+  {
+   "fieldname": "skonto_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Skonto Date"
+  },
+  {
+   "fieldname": "column_skonto",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "skonto_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Skonto Amount",
+   "options": "currency",
+   "precision": "2"
+  }
+ ],
+ "modified": "2020-02-08 21:08:06.302111",
+ "modified_by": "Administrator",
+ "module": "ERPNextSwiss",
+ "name": "Payment Proposal Purchase Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
