@@ -1,0 +1,216 @@
+[
+  {
+    "name": "student",
+    "permissions": {
+      "see": {
+        "self": [
+          "balance",
+          "attendance",
+          "received_transactions",
+          "created_transactions"
+        ]
+      },
+      "create": {
+        "self": [
+          "p2p"
+        ]
+      }
+    }
+  },
+  {
+    "name": "staff",
+    "permissions": {
+      "upload": {
+        "self": [
+          "files"
+        ]
+      },
+      "see": {
+        "self": [
+          "received_transactions",
+          "created_transactions"
+        ],
+        "student": [
+          "balance",
+          "attendance",
+          "received_transactions",
+          "created_transactions"
+        ]
+      },
+      "create": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ]
+      },
+      "process": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ],
+        "student": [
+          "created_transactions"
+        ]
+      },
+      "update": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ]
+      },
+      "decline": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ],
+        "student": [
+          "created_transactions"
+        ]
+      }
+    }
+  },
+  {
+    "name": "admin",
+    "permissions": {
+      "upload": {
+        "self": [
+          "files"
+        ]
+      },
+      "see": {
+        "self": [
+          "balance",
+          "received_transactions",
+          "created_transactions"
+        ],
+        "student": [
+          "balance",
+          "attendance",
+          "received_transactions",
+          "created_transactions"
+        ],
+        "staff": [
+          "balance",
+          "received_transactions",
+          "created_transactions"
+        ]
+      },
+      "create": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ]
+      },
+      "process": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ],
+        "student": [
+          "created_transactions"
+        ],
+        "staff": [
+          "created_transactions"
+        ]
+      },
+      "update": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ]
+      },
+      "decline": {
+        "self": [
+          "general_money",
+          "lecture",
+          "workout",
+          "fac_pass",
+          "fac_attend",
+          "seminar",
+          "fine",
+          "purchase",
+          "exam",
+          "activity",
+          "lab",
+          "dining_services"
+        ],
+        "student": [
+          "created_transactions"
+        ],
+        "staff": [
+          "created_transactions"
+        ]
+      }
+    }
+  }
+]

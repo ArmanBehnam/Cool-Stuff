@@ -1,0 +1,149 @@
+[
+  {
+    "name": "exam",
+    "readable_name": "Экзамен",
+    "money": [
+      "exam"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "workout",
+    "readable_name": "Зарядка",
+    "money": [
+      "workout_reward"
+    ],
+    "attendance": [
+      "workout"
+    ]
+  },
+  {
+    "name": "fac_attend",
+    "readable_name": "Занятие факультатива",
+    "money": [],
+    "attendance": [
+      "fac_attend"
+    ]
+  },
+  {
+    "name": "p2p",
+    "readable_name": "Личный перевод",
+    "money": [
+      "p2p"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "general_money",
+    "readable_name": "Начисление",
+    "money": [
+      "radio_help",
+      "art_help",
+      "staff_help",
+      "class_pass",
+      "olympiad",
+      "olympiad_problem",
+      "territory_cleaning",
+      "else",
+      "reward"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "seminar",
+    "readable_name": "Семинар",
+    "money": [
+      "seminar_pass_reward"
+    ],
+    "attendance": [
+      "seminar_attend",
+      "seminar_pass"
+    ]
+  },
+  {
+    "name": "lecture",
+    "readable_name": "Лекция",
+    "money": [
+      "fine_lecture"
+    ],
+    "attendance": [
+      "lecture_attend"
+    ]
+  },
+  {
+    "name": "fac_pass",
+    "readable_name": "Зачет по факультативу",
+    "money": [
+      "fac_pass_reward"
+    ],
+    "attendance": [
+      "fac_pass"
+    ]
+  },
+  {
+    "name": "activity",
+    "readable_name": "Мероприятие",
+    "money": [
+      "evening_activity",
+      "day_activity",
+      "sport_activity"
+    ],
+    "attendance": [
+      "book_certificate"
+    ]
+  },
+  {
+    "name": "fine",
+    "readable_name": "Штраф",
+    "money": [
+      "fine_lang",
+      "fine_schedule",
+      "fine_safety",
+      "fine_clean",
+      "fine_sub",
+      "fine_moral",
+      "fine_damage",
+      "fine_any"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "tax",
+    "readable_name": "Налог",
+    "money": [
+      "tax"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "purchase",
+    "readable_name": "Покупка",
+    "money": [
+      "goods",
+      "books",
+      "service",
+      "auction"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "dining_services",
+    "readable_name": "Дежурство по столовой",
+    "money": [
+      "potato",
+      "serving",
+      "bread_cut"
+    ],
+    "attendance": []
+  },
+  {
+    "name": "lab",
+    "readable_name": "Лабораторная работа",
+    "money": [
+      "lab_pass_reward"
+    ],
+    "attendance": [
+      "lab_pass"
+    ]
+  }
+]
