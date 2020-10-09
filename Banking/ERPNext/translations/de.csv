@@ -1,0 +1,296 @@
+Module: ERPNextSwiss,Fullsize,Ganzer Bildschirm
+Module: ERPNextSwiss,Fullsize View,Ganzer Bildschirm
+Module: ERPNextSwiss,Normal View,Normale Ansicht
+Page: bankimport,Bank import,Bankdaten importieren
+DocType: VAT Declaration,VAT Declaration,Mehrwertsteuerdeklaration
+Page: payment_export,Payment export,Zahlungsdatei erstellen
+DocType: VAT Declaration,Taxes,Steuern
+DocType: Payment Entry,Transaction Type,Transaktionstyp
+DocType: Payment Entry,ESR Participant Number,ESR-Teilnehmernummer
+DocType: Payment Entry,ESR Reference,ESR-Referenz
+DocType: Payment Entry,Supplier data added,Lieferantendetails hinzugefügt
+DocType: Payment Entry,Invoice details added,Rechnungsdetails hinzugefügt
+DocType: Account,Payment Files,Transferdateien
+Page: payment_export,No payment entries to be paid found with status draft,Es wurden keine offenen Zahlungen (Entwurf) gefunden.
+Page: payment_export,Exports the selected payment entries for execution by file transfer to a bank,Exportiert die gewählten Zahlungen zur Ausführung durch eine Bank
+Page: payment_export,Payment entries,Zahlungen
+Page: payment_export,Create payment file,Zahlungsdatei erstellen
+Page: bankimport,Import payment entries from bank account file,Importiert Zahlungen aus einer Bankkonto-Datei
+Page: bankimport,Payment account,Konto
+Page: bankimport,Automatically submit,Automatisch buchen
+Page: bankimport,Parse,Einlesen
+Page: bankimport,File,Datei
+Page: bankimport,Please select a file.,Bitte eine Datei wählen
+Page: bankimport,Error reading file,Fehler beim lesen der Datei
+Page: bankimport,Successfully imported {0} payments.,{0} Zahlugen erfolgreich importiert.
+Page: bankimport,CAMT.054 Transaction Notification,CAMT.054 Zahlungsinformationen
+Page: bankimport,CAMT.053 Bank Statement,CAMT.053 Kontoauszug
+Page: bankimport,Unable to read structure. Please make sure that you have selected the correct format.,"Struktur kann nicht gelesen werden. Bitte prüfen Sie, ob Sie das korrekte Format ausgewählt haben."
+Page: payment_export,Please select at least one payment.,Bitte mindestens eine Zahlung auswählen.
+Page: payment_export,No payment entries to be paid found with status draft,Es wurden keine Zahlungen mit Status Entwurf gefunden
+DocType: VAT Declaration,End,Ende
+DocType: VAT Declaration,VAT type,Abrechnungstyp
+DocType: VAT Declaration,effective,Effektiv
+DocType: VAT Declaration,flat,Saldo
+DocType: VAT Declaration,Revenue,Umsatz
+DocType: VAT Declaration,Get values,Werte holen
+DocType: VAT Declaration,Recalculate,Neu berechnen
+DocType: VAT Declaration,Total revenue (200),"Total der vereinbarten bzw. vereinnahmten Entgelte (Art. 39), inkl. Entgelte aus Übertragungen im Meldeverfahren sowie aus Leistungen im Ausland (200)"
+DocType: VAT Declaration,Non-taxable revenue (205),Nicht steuerpflichtige Umsätze (205)
+DocType: VAT Declaration,Tax-free services (220),"Von der Steuer befreite Leistungen (u.a. Exporte; Art. 23), von der Steuer befreite Lesitungen an begünstigte Einrichtungen und Personen (220)"
+DocType: VAT Declaration,Revenue abroad (221),Leistungen im Ausland (221)
+DocType: VAT Declaration,Transfers (225),"Übertragung im Meldeverfahren (Art. 38, bitte zusätzlich Form. 764 einreichen) (225)"
+DocType: VAT Declaration,Non-taxable services (230),"Nicht steuerbare Leistungen (Art 21), für die nicht nach Art. 22 optiert wird (230)"
+DocType: VAT Declaration,Losses (235),Entgeltsminderung (235)
+DocType: VAT Declaration,Miscellaneous (280),Diverses (z.B. Wert des Bodens) (280)
+DocType: VAT Declaration,Total deductions (289),Total Abzüge (289)
+DocType: VAT Declaration,Taxable revenue (299),Steuerbarer Gesamtumsatz (299)
+DocType: VAT Declaration,Tax calculation,Steuerberechnung
+DocType: VAT Declaration,Normal (301),Normal (301)
+DocType: VAT Declaration,Reduced (311),Reduziert (311)
+DocType: VAT Declaration,Lodging (341),Beherbergung (341)
+DocType: VAT Declaration,Amount 1 (321),1. Satz (321)
+DocType: VAT Declaration,Amount 2 (331),2. Satz (331)
+DocType: VAT Declaration,Additional (381),Bezugsteuer (381)
+DocType: VAT Declaration,Normal (302),Normal (302)
+DocType: VAT Declaration,Reduced (312),Reduziert (312)
+DocType: VAT Declaration,Lodging (342),Beherbergung (342)
+DocType: VAT Declaration,Amount 1 (322),1. Satz (322)
+DocType: VAT Declaration,Amount 2 (332),2. Satz (332)
+DocType: VAT Declaration,Additional (382),Bezugsteuer (382)
+DocType: VAT Declaration,Normal rate (%),Normal (%)
+DocType: VAT Declaration,Reduced rate (%),Reduziert (%)
+DocType: VAT Declaration,Lodging rate (%),Beherbergung (%)
+DocType: VAT Declaration,Rate 1 (%),1. Satz (%)
+DocType: VAT Declaration,Rate 2 (%),2. Satz (%)
+DocType: VAT Declaration,Normal tax (300),Normale Steuer (300)
+DocType: VAT Declaration,Reduced tax (310),Reduzierte Steuer (310)
+DocType: VAT Declaration,Lodging tax (340),Beherbergungssteuer (340)
+DocType: VAT Declaration,Tax 1 (320),Steuer Satz 1 (320)
+DocType: VAT Declaration,Tax 2 (330),Steuer Satz 2 (330)
+DocType: VAT Declaration,Additional tax (380),Bezugssteuer (380)
+DocType: VAT Declaration,Summary,Zusammenfassung
+DocType: VAT Declaration,Total tax (399),Total geschuldete Steuer (399)
+DocType: VAT Declaration,Pretax material and services (400),Vorsteuer auf Material- und Dienstleistungsaufwand (400)
+DocType: VAT Declaration,Pretax investments (405),Vorsteuer auf Investitionen und übrigem Betriebsaufwand (405)
+DocType: VAT Declaration,Missing pretax (410),"Einlageentsteuerung (Art. 32, bitte detaillierte Aufstellung beilegen) (410)"
+DocType: VAT Declaration,Pretax correction mixed (415),"Vorsteuerkorrekturen: gemischte Verwendung (Art. 30), Eigenverbrauch (Art. 31) (415)"
+DocType: VAT Declaration,Pretax correction other (420),"Vorsteuerkorrekturen: Nicht-Entgelte wie Subventionen, Tourismusabgaben (Art. 33 Abs 2) (420)"
+DocType: VAT Declaration,Form 1050 (470),Steueranrechnung gemäss Formular Nr. 1050 (470)
+DocType: VAT Declaration,Form 1055 (471),Steueranrechnung gemäss Formular Nr. 1055 (471)
+DocType: VAT Declaration,Total pretax reductions (479),Total Vorsteuer (479)
+DocType: VAT Declaration,Payable tax (500),An die Eigd. Steuerverwaltung zu bezahlender Betrag (500)
+DocType: VAT Declaration,Balance (510),Guthaben der steuerpflichtigen Person (510)
+DocType: VAT Declaration,Other cashflows,Andere Mittelflüsse (Art. 18 Abs 2)
+DocType: VAT Declaration,Grants (900),"Subventionen, durch Kurvereine eingenommene Toursimusabgaben, Entsorgungs- und Wasserwerkbeiträge (Bst. a-c) (900)"
+DocType: VAT Declaration,Donations (910),"Spenden, Dividenden, Schadenersatz usw. (Bst. d-l) (910)"
+DocType: ERPNextSwiss VAT configuration,VAT tax mode,Steuerabrechnungsart
+DocType: ERPNextSwiss VAT configuration,Effective tax,Effektive Steuer
+DocType: ERPNextSwiss VAT configuration,Normal rate tax template,Steuervorlage normal
+DocType: ERPNextSwiss VAT configuration,Reduced rate tax template,Steuervorlage reduziert
+DocType: ERPNextSwiss VAT configuration,Lodging rate tax template,Steuervorlage Beherbergung
+DocType: ERPNextSwiss VAT configuration,Abroad tax template,Steuervorlage Auslandumsatz
+DocType: ERPNextSwiss VAT configuration,Tax-free tax template,Steuervorlage steuerfrei
+DocType: ERPNextSwiss VAT configuration,Pretax account,Abrechnungskonto MWST
+DocType: ERPNextSwiss VAT configuration,Flat tax,Saldobesteuerung
+DocType: ERPNextSwiss VAT configuration,Rate 1 tax template,Steuertemplate Satz 1
+DocType: ERPNextSwiss VAT configuration,Rate 2 tax template,Steuertemplate Satz 2
+DocType: ERPNextSwiss VAT configuration,Configuration,Einstellungen
+DocType: ERPNextSwiss VAT configuration,VAT configuration,Mehrwertsteuereinstellungen
+Page: match_payments,Match payments,Zahlungen zuordnen
+Page: match_payments,Helps to match unpaid sales invoices against received payments,Hilft Zahlungseingänge unbezahlten Ausgangsrechnungen zu zu ordnen
+Page: match_payments,Sales invoices,Rechnungen
+Page: match_payments,Sales invoice,Rechnung
+Page: match_payments,Due date,Zahlbarkeit
+Page: match_payments,Payment entries,Zahlungseingänge
+Page: match_payments,Payment entry,Zahlung
+Page: match_payments,Match,Zuordnen
+Page: match_payments,Please select a sales invoice.,Bitte eine Rechnung wählen
+Page: match_payments,Please select a payment entry.,Bitte einen Zahlungseingang wählen
+Page: match_payments,Payment entry not found,Zahlung nicht gefunden
+Page: match_payments,Customer not found,Kunde nicht gefunden
+Page: match_payments,Done,Fertig
+Page: match_payments,No unpaid sales invoices found.,Es wurden keine unbezahlten Rechnungen gefunden.
+Page: match_payments,No unallocated payment entries found.,Es wurden keine nicht-zugewiesene Zahlungen gefunden.
+Page: match_payments,Open bank import,Bankdaten importieren
+Page: match_payments,Matched {0} sales invoices.,{0} Rechnungen abgeglichen
+Page: match_payments,No matches found.,Keine Treffer gefunden
+Page: match_payments,Auto match by ID,Abgleich per ID
+Page: match_payments,Auto match by ESR,Abgleich per ESR
+Page: payment_export,Some payments were skipped due to errors (check the payment file for details):,Einige Zahlungen wurden wegen Fehlern übersprungen (Zahlungsdatei enthält Details):
+DocType: Supplier,ESR Participation Number,ESR Teilnehmernummer
+DocType: Purchase Invoice,ESR Reference Number,ESR Referenznummer
+DocType: Salary Certificate,Salary Certificate,Lohnausweis
+DocType: Salary Certificate,Please save the record before populating it with data,Bitte speichern Sie den Datensatz bevor Daten eingelesen werden
+DocType: Salary Certificate,Salary slip information collected,Lohnauszüge eingelesen
+DocType: Salary Certificate,Calculate totals,Summen berechnen
+DocType: Salary Certificate,Totals have been updated,Summen wurden aktualisiert
+DocType: Salary Certificate,Please select a valid employee.,Bitte einen gültigen Mitarbeiter wählen
+DocType: Salary Certificate,Start date,Von Datum
+DocType: Salary Certificate,End date,Bis Datum
+DocType: Salary Certificate,Benefits,Vorteile
+DocType: Salary Certificate,Certificate type,Lohnausweisart
+DocType: Salary Certificate,Pension,Rente
+DocType: Salary Certificate,Free transport,Unentgeltliche Beförderung zwischen Wohn- und Arbeitsort
+DocType: Salary Certificate,Lunch checks,Kantinenverpflegung/Lunch-Checks
+DocType: Salary Certificate,Section salary,Abschnitt Lohn
+DocType: Salary Certificate,1. Salary,1. Lohn/Rente
+DocType: Salary Certificate,2.1 Catering,"2.1 Verpflegung, Unterkunft"
+DocType: Salary Certificate,2.2 Car,2.2 Privatanteil Geschäftswagen
+DocType: Salary Certificate,2.3 Other salary,2.3 Andere
+DocType: Salary Certificate,3 Irregular,3. Unregelmässige Leistungen
+DocType: Salary Certificate,4 Capital,4. Kapitalleistungen
+DocType: Salary Certificate,2.3 Other salary description,2.3 Beschreibung Andere
+DocType: Salary Certificate,3 Irregular description,3. Beschreibung unregelmässige Leistungen
+DocType: Salary Certificate,4 Capital description,4. Beschreibung Kapitalleistungen
+DocType: Salary Certificate,5 Participation,5. Beteiligungsrechte gemäss Beiblatt
+DocType: Salary Certificate,6 Board,6. Verwaltungsratsentschädigungen
+DocType: Salary Certificate,7 Other,7. Andere Leistungen
+DocType: Salary Certificate,7 Other description,7. Beschreibung andere Leistungen
+DocType: Salary Certificate,8 Gross salary,8. Bruttolohn total
+DocType: Salary Certificate,9 Deductions AHV/IV/EO/ALV/NBUV,9. Beiträge AHV/IV/EO/ALV/NBUV
+DocType: Salary Certificate,10.1 Deduction pension,10.1 Ordentliche Beiträge berufliche Vorsorge
+DocType: Salary Certificate,10.2 Deduction pension additional,10.2 Beiträge für den Einkauf
+DocType: Salary Certificate,11 Net salary,11. Nettolohn/Rente
+DocType: Salary Certificate,12 Source tax deduction,12. Quellensteuerabzug
+DocType: Salary Certificate,13.1.1 Effective expenses travel,"13.1.1 Effektive Spesen Reise, Verppflegung, Übernachtung"
+DocType: Salary Certificate,13.1.2 Effective other expenses,13.1.2 Effektive Spesen andere
+DocType: Salary Certificate,13.2.1 Representation expenses,13.2.1 Pauschalspesen Repräsentation
+DocType: Salary Certificate,13.2.2 Car expenses,13.2.2 Pauschalspesen Auto
+DocType: Salary Certificate,13.2.3 Other net expenses,13.2.3 Pauschalspesen übrige
+DocType: Salary Certificate,13.3 Education,13.3 Beiträge an die Weiterbildung
+DocType: Salary Certificate,14 Other salary sides,14. Gehaltsnebenleistungen Art
+DocType: Salary Certificate,15 Remarks,15. Bemerkungen
+DocType: Label Printer,Label Printer,Etikettendrucker
+DocType: Label Printer,Create Test PDF,Test-PDF erstellen
+DocType: Label Printer,Create Label,Etikett erstellen
+DocType: Pincode,Canton,Kanton
+DocType: Pincode,Canton Code,Kantonsabkürzung
+DocType: Pincode,Country Code,Länderabkürzung
+DocType: Pincode,Set,Setzen
+DocType: Pincode,Import Pincodes,Postleitzahlen einlesen
+DocType: Pincode,Import started...,Import gestartet...
+DocType: Pincode,Successfully imported,Erfolgreich importiert
+Page: abacus_export,Abacus Export,Abacus Transferdatei
+Page: abacus_export,Export General Ledger to an Abacus transfer file,Exportiert Transaktionen in eine Abacus Transferdatei
+Page: abacus_export,to,bis
+Page: abacus_export,Create File,Datei erstellen
+Page: abacus_export,more records available (not shown),es gibt weitere Einträge (nicht angezeigt)
+Page: abacus_export,No general ledger entries found.,Keine Transaktionen gefunden.
+Page: abacus_export,Export flags reset,Export-Markierungen entfernt
+Page: abacus_export,Exported to Abacus,Nach Abacus exportiert
+Page: abacus_export,Reset export flags,Export-Markierungen entfernen
+DocType: ERPNextSwiss Settings,ERPNextSwiss Settings,ERPNextSwiss Einstellungen
+DocType: ERPNextSwiss Settings,Default Customer,Standardkunde
+DocType: ERPNextSwiss Settings,Use this to define a default customer,Setzt einen Standardkunden
+DocType: Contract,Contract,Vertrag
+DocType: Contract,Contracts,Verträge
+DocType: ERPNextSwiss Settings,Automated Payments,Automatische Zahlungsabwicklung
+DocType: ERPNextSwiss Settings,Planning Period (Days),Planungszeitraum (Tage)
+DocType: Payment Reminder,Payment Reminder,Mahnung
+DocType: Payment Reminder,Payment Reminder Level,Mahnungsstufe
+DocType: Payment Reminder,Exclude From Payment Reminder Until,Von Mahnungsläufen ausschliessen bis
+DocType: Payment Reminder,Level,Stufe
+DocType: Payment Reminder,Create Payment Reminders,Mahnlauf durchführen
+DocType: Payment Reminder,Payment Reminders created,Mahnlauf durchgeführt
+DocType: Payment Reminder,Reminder Level,Mahnstufe
+DocType: Payment Reminder,Reminder Charge,Mahngebühr
+DocType: Payment Reminder,Auto Submit,Automatisch buchen
+DocType: Payment Reminder,Reminder Charges,Mahngebühren
+DocType: Payment Reminder,Highest Level,Höchste Stufe
+DocType: Payment Reminder,Total before Charge,Zwischensumme
+DocType: Payment Reminder,Total with Charge,Gesamtsumme
+DocType: Payment Reminder,Are you sure you want to create payment reminders?,"Sind Sie sicher, dass Sie Mahnungen erstellen möchten?"
+Module: ERPNextSwiss,Is proposed,Abgeholt
+Module: ERPNextSwiss,Skonto Percent,Skonto-Prozent
+Module: ERPNextSwiss,Skonto Days,Skonto-Tage
+Module: ERPNextSwiss,Skonto Account,Skonto-Konto
+Module: ERPNextSwiss,Skonto Cost Center,Skonto-Kostenstelle
+Module: ERPNextSwiss,Enable LSV,LSV aktivieren
+DocType: Direct Debit Proposal,Direct Debit Proposal,Lastschrifteinzugsvorschlag
+DocType: Direct Debit Proposal,Create Direct Debit Proposal,Lastschrifteinzug vorbereiten
+DocType: Direct Debit Proposal,No available sales invoices found.,Keine verfügbaren Zahlungen gefunden.
+DocType: Direct Debit Proposal,Download bank file,Bankdatei herunterladen
+DocType: Direct Debit Proposal,Receive to Account,Empfangendes Bankkonto
+DocType: Direct Debit Proposal,Banking,Bankverbindung
+DocType: Direct Debit Proposal,LSV Code,LSV-Code
+DocType: Direct Debit Proposal,LSV Date,LSV-Datum
+DocType: Direct Debit Proposal,Please provide an intermediate account.,Bitte geben Sie ein Zwischenkonto an.
+DocType: Direct Debit Proposal,Please provide a skonto account and cost center.,Bitte geben Sie für den Skontoabzug ein Skonto-Konto und eine Kostenstelle an.
+DocType: Direct Debit Proposal,Please select an account to receive to.,Bitte wählen Sie ein Zielkonto aus.
+Close Invoice on Intermediate Account,Rechnungen gegen Zwischenkonto schliessen
+DocType: Direct Debit Proposal,Intermediate,Zw.Konto
+DocType: Payment Proposal,Create Payment Proposal,Zahlungsvorschlag erstellen
+DocType: Payment Proposal,Payment Proposal,Zahlungsvorschlag
+DocType: Payment Proposal,No suitable invoices found.,Keine passenden Rechnungen gefunden.
+DocType: Payment Proposal,Intermediate Account,Zwischenkonto
+DocType: Payment Proposal,Close Invoive on Intermediate Account,Rechnung auf Zwischenkonto schliessen
+DocType: Payment Proposal,Please select an intermediate account.,Bitte ein Zwischenkonto wählen.
+DocType: Payment Proposal,Set Payment Date,Zahlungsdatum setzen
+DocType: Payment Proposal,Pay from Account,Zahlungen von diesem Konto ausführen
+DocType: Payment Proposal,Execute Payments On,Zahlungen an diesem Datum ausführen
+DocType: Payment Proposal,Invoice Amount,Rechnungsbetrag
+DocType: Payment Proposal,External Reference,Externe Referenz
+DocType: Payment Proposal,Skonto Date,Skonto-Datum
+DocType: Payment Proposal,Skonto Amount,Betrag mit Skonto
+DocType: Payment Proposal,Individual payments,Jede Rechnung einzeln bezahlen
+Page: Bank Wizard,Bank Wizard,Bankassistent
+Page: Bank Wizard,Transaction matched,Zahlung zugewiesen
+Page: Bank Wizard, transactions found, Zahlungen gefunden
+Page: Bank Wizard,Please set the <b>default accounts</b> in <a href=\"/desk#Form/Company/{0}\">{0}</a>.Bitte setzten Sie <b>Standardkonten</b> unter <a href=\"/desk#Form/Company/{0}\">{0}</a>.
+Page: Bank Wizard,Please set the <b>default supplier</b> in <a href=\"/desk#Form/ERPNextSwiss Settings\">ERPNextSwiss Settings</a>.,Bitte setzen Sie den <b>Standardlieferant</b> unter <a href=\"/desk#Form/ERPNextSwiss Settings\">ERPNextSwiss Settings</a>.
+Page: Bank Wizard,Please set the <b>default customer</b> in <a href=\"/desk#Form/ERPNextSwiss Settings\">ERPNextSwiss Settings</a>.,Bitte setzen Sie den <b>Standardkunden</b> unter <a href=\"/desk#Form/ERPNextSwiss Settings\">ERPNextSwiss Settings</a>.
+Page: Bank Wizard,Please set the <b>intermediate bank account</b> in <a href=\"/desk#Form/ERPNextSwiss Settings\">ERPNextSwiss Settings</a>.,Bitte setzen Sie ein <b>Zwischenkonto</b> unter <a href=\"/desk#Form/ERPNextSwiss Settings\">ERPNextSwiss Settings</a>.
+Page: Bank Wizard,An error occurred while parsing. Please check the log files.,Es ist ein Fehler aufgetreten. Bitte prüfen Sie die Fehlerprotokolle.
+Page: Bank Wizard,Unsupported file format. Please use an xml or zip camt file,Dieses Format wird nicht unterstützt. Bitte verwenden Sie eine gültige XML- oder ZIP-Datei
+DocType: Daily Closing Statement,Daily Closing Statement,Tagesabschluss
+DocType: Daily Closing Statement,Statistics,Statistik
+DocType: Daily Closing Statement,Total Sales,Total Umsatz
+DocType: Daily Closing Statement,Average Sales,Durchschnittlicher Umsatz
+DocType: Daily Closing Statement,Number of Customers,Anzahl Kunden
+DocType: Daily Closing Statement,Highest Sale,Höchster Umsatz
+DocType: Daily Closing Statement,Discounts,Rabatte
+DocType: Daily Closing Statement,Count,Anzahl
+DocType: Daily Closing Statement,Currencies,Währungen
+DocType: Daily Closing Statement,Payment Modes,Zahlungsweisen
+DocType: Inspection Equipment,Inspection Equipment,Prüfmittel
+DocType: Inspection Equipment,Transaction,Transaktion
+DocType: Inspection Equipment,Calibration / Test,Kalibration / Test
+DocType: Inspection Equipment,Inspection Equipment Transaction,Prüfmittel Transaktion
+DocType: Inspection Equipment,General,Allgemein
+DocType: Inspection Equipment,Type,Typ
+DocType: Inspection Equipment,Manufacturer,Hersteller
+DocType: Inspection Equipment,Inventory Number,Inventar Nummer
+DocType: Inspection Equipment,Location,Ort
+DocType: Inspection Equipment,Measurement Range,Messbereich
+DocType: Inspection Equipment,Usage,Verwendung
+DocType: Inspection Equipment,Purchase Price,Einkaufspreis
+DocType: Inspection Equipment,Purchase Date,Beschaffungsdatum
+DocType: Inspection Equipment,Transaction Status,Transaktionsstatus
+DocType: Inspection Equipment,On Stock,An Lager
+DocType: Inspection Equipment,Taken,Entnommen
+DocType: Inspection Equipment,Calibration,Kalibration
+DocType: Inspection Equipment,Last Calibration,Letzte Kalibration
+DocType: Inspection Equipment,Next Calibration,Nächste Kalibration
+DocType: Inspection Equipment,Calibration Test Set,Kalibration Test Set
+DocType: Inspection Equipment,Calibration Test,Kalibration Test
+DocType: Inspection Equipment,Calibration Interval,Kalibrations Interval
+DocType: Inspection Equipment,Current Inspection Equipment Status,Aktueller Prüfmittel Transaktionsstatus
+DocType: Inspection Equipment,New Inspection Equipment Status,Neuer Prüfmittel Transaktionsstatus
+DocType: Inspection Equipment,Inspection Equipment Type,Prüfmitteltyp
+DocType: Inspection Equipment,Perform Test, Test durchführen
+DocType: Inspection Equipment,Test Plan Items, Testschritte
+DocType: Inspection Equipment,Operating Instructions, Ausführungsanweisung
+DocType: Inspection Equipment,Test based on,Test basierend auf
+DocType: Inspection Equipment,Inspection Decision OK?,Prüfkriterium OK?
+DocType: Inspection Equipment,Inspection Decision OK,Prüfkriterium OK
+DocType: Inspection Equipment,Calibration / Test-Set,Kalibration / Test-Set
+DocType: Inspection Equipment,Caution; the actual value is not between OTG and UTG!,Achtung; der gemessene Wert liegt ausserhalb der Toleranzgrenzen!
+DocType: Inspection Equipment,To Calibrate,Zu Kalibrieren
+DocType: Inspection Equipment,Calibrated,Kalibriert
+DocType: Inspection Equipment,Without Calibration,Ohne Kalibration
+DocType: Inspection Equipment,Scrap,Verschrottet
+DocType: Inspection Equipment,Blocked,Gesperrt
+DocType: Inspection Equipment,in months,in Monaten
+DocType: Inspection Equipment,Taken by,Entnommen von
+DocType: VAT query,VAT query,MwSt-Abfrage
