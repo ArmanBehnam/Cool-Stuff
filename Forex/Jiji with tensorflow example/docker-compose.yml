@@ -1,0 +1,37 @@
+jiji:
+  container_name: jiji_example__jiji
+  image: unageanu/jiji:latest
+  links:
+    - mongodb
+    - tensorflow
+  environment:
+    # サーバー内部で秘匿データの暗号化に使うキー
+    # 必ず変更して使用してください。
+    # UIから入力を求められることはないので、任意の長い文字列を使用すればOKです。
+    USER_SECRET: d41d8cd98f00b204e9800998ecf8427e
+
+mongodb:
+  container_name: jiji_example__mongodb
+  image: mongo:3.0.7
+  ports:
+    - "37017:27017"
+
+nginx:
+  container_name: jiji_example__nginx
+  image: unageanu/jiji-nginx:latest
+  links:
+    - jiji
+  ports:
+    - "10443:443"
+  volumes:
+    - ./cert/server.crt:/etc/nginx/cert/ssl.crt:ro
+    - ./cert/server.key:/etc/nginx/cert/ssl.key:ro
+
+tensorflow:
+  build: ./build/tensorflow
+  container_name: jiji_example__tensorflow
+  links:
+    - mongodb
+  ports:
+    - "15000:5000" # REST API
+    - "16006:6006" # tensorboard
