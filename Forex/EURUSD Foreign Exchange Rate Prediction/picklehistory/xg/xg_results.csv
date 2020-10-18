@@ -1,0 +1,321 @@
+,parameters,mean_validation_score,cv_validation_scores
+0,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 100, 'pca__n_components': 15}",0.5364092949589632,[ 0.53657923  0.53623936]
+1,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 100, 'pca__n_components': 20}",0.5390865615803134,[ 0.53957718  0.53859594]
+2,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 100, 'pca__n_components': 25}",0.5382300792071333,[ 0.53989185  0.53656831]
+3,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 100, 'pca__n_components': 30}",0.5375569240847236,[ 0.53836746  0.53674638]
+4,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 200, 'pca__n_components': 15}",0.5323016741535233,[ 0.53017935  0.534424  ]
+5,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 200, 'pca__n_components': 20}",0.531965705596605,[ 0.52857907  0.53535234]
+6,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 200, 'pca__n_components': 25}",0.5343026364439868,[ 0.53314208  0.5354632 ]
+7,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 200, 'pca__n_components': 30}",0.5354478131347777,[ 0.53640408  0.53449155]
+8,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 500, 'pca__n_components': 15}",0.5273714281998183,[ 0.52466701  0.53007585]
+9,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 500, 'pca__n_components': 20}",0.5288829413219908,[ 0.52578678  0.5319791 ]
+10,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 500, 'pca__n_components': 25}",0.529071310976699,[ 0.52688048  0.53126214]
+11,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 500, 'pca__n_components': 30}",0.5295459165311832,[ 0.52914674  0.5299451 ]
+12,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 1000, 'pca__n_components': 15}",0.5228423735377423,[ 0.51978475  0.5259    ]
+13,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 1000, 'pca__n_components': 20}",0.5220289715449501,[ 0.51687003  0.52718792]
+14,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 1000, 'pca__n_components': 25}",0.5243544540055934,[ 0.52317946  0.52552945]
+15,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 3, 'clf__n_estimators': 1000, 'pca__n_components': 30}",0.5251734643176054,[ 0.524695    0.52565192]
+16,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 100, 'pca__n_components': 15}",0.5301940189589736,[ 0.52611873  0.53426931]
+17,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 100, 'pca__n_components': 20}",0.534245263404505,[ 0.53438793  0.5341026 ]
+18,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 100, 'pca__n_components': 25}",0.5326301788049234,[ 0.53393015  0.53133021]
+19,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 100, 'pca__n_components': 30}",0.5334300405787517,[ 0.5339772   0.53288289]
+20,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 200, 'pca__n_components': 15}",0.5293541933574087,[ 0.52780221  0.53090618]
+21,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 200, 'pca__n_components': 20}",0.5271639807411591,[ 0.52585489  0.52847307]
+22,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 200, 'pca__n_components': 25}",0.5272016294485495,[ 0.52452641  0.52987685]
+23,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 200, 'pca__n_components': 30}",0.5292344403101822,[ 0.52947471  0.52899417]
+24,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 500, 'pca__n_components': 15}",0.5227971214342848,[ 0.51879469  0.52679955]
+25,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 500, 'pca__n_components': 20}",0.5235348984015596,[ 0.52117772  0.52589208]
+26,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 500, 'pca__n_components': 25}",0.5231019028711202,[ 0.52367395  0.52252986]
+27,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 500, 'pca__n_components': 30}",0.5246309609196911,[ 0.52416854  0.52509338]
+28,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 1000, 'pca__n_components': 15}",0.5166950984233306,[ 0.51481863  0.51857156]
+29,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 1000, 'pca__n_components': 20}",0.5151991090370978,[ 0.51147802  0.5189202 ]
+30,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 1000, 'pca__n_components': 25}",0.5178171774448593,[ 0.51811325  0.5175211 ]
+31,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 5, 'clf__n_estimators': 1000, 'pca__n_components': 30}",0.5220615741352371,[ 0.52205404  0.5220691 ]
+32,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 100, 'pca__n_components': 15}",0.523566387969778,[ 0.51923574  0.52789703]
+33,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 100, 'pca__n_components': 20}",0.522800552139028,[ 0.5177983  0.5278028]
+34,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 100, 'pca__n_components': 25}",0.5233173825310526,[ 0.52150903  0.52512573]
+35,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 100, 'pca__n_components': 30}",0.5243576236332089,[ 0.52219549  0.52651975]
+36,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 200, 'pca__n_components': 15}",0.5181239227768193,[ 0.51346785  0.52277999]
+37,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 200, 'pca__n_components': 20}",0.5212496653149223,[ 0.51938011  0.52311922]
+38,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 200, 'pca__n_components': 25}",0.520479854214262,[ 0.51882028  0.52213943]
+39,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 200, 'pca__n_components': 30}",0.5210776845399604,[ 0.51965035  0.52250502]
+40,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 500, 'pca__n_components': 15}",0.5162219884443047,[ 0.51464606  0.51779792]
+41,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 500, 'pca__n_components': 20}",0.5170296998836631,[ 0.51561725  0.51844215]
+42,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 500, 'pca__n_components': 25}",0.5212893790246821,[ 0.52292042  0.51965833]
+43,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 500, 'pca__n_components': 30}",0.5177526815247208,[ 0.51876067  0.51674469]
+44,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 1000, 'pca__n_components': 15}",0.5165697663872566,[ 0.51493299  0.51820654]
+45,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 1000, 'pca__n_components': 20}",0.5146394307205376,[ 0.51215207  0.51712679]
+46,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 1000, 'pca__n_components': 25}",0.5179446380829614,[ 0.52048244  0.51540684]
+47,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 8, 'clf__n_estimators': 1000, 'pca__n_components': 30}",0.5175483049137869,[ 0.51999177  0.51510484]
+48,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 100, 'pca__n_components': 15}",0.5206434209259045,[ 0.51708769  0.52419915]
+49,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 100, 'pca__n_components': 20}",0.5241193410287021,[ 0.5230991   0.52513958]
+50,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 100, 'pca__n_components': 25}",0.5209555128785026,[ 0.52069178  0.52121924]
+51,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 100, 'pca__n_components': 30}",0.5195989213020913,[ 0.51705163  0.52214621]
+52,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 200, 'pca__n_components': 15}",0.515229788848406,[ 0.51143931  0.51902027]
+53,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 200, 'pca__n_components': 20}",0.5192543434461914,[ 0.51690547  0.52160321]
+54,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 200, 'pca__n_components': 25}",0.5200793457714444,[ 0.52175287  0.51840582]
+55,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 200, 'pca__n_components': 30}",0.5185283599127996,[ 0.51740465  0.51965207]
+56,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 500, 'pca__n_components': 15}",0.5164010758562707,[ 0.51142381  0.52137835]
+57,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 500, 'pca__n_components': 20}",0.5156104585788386,[ 0.51298013  0.51824079]
+58,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 500, 'pca__n_components': 25}",0.5186207229032076,[ 0.51864397  0.51859748]
+59,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 500, 'pca__n_components': 30}",0.5189316858835177,[ 0.52179864  0.51606474]
+60,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 1000, 'pca__n_components': 15}",0.5162989190230732,[ 0.51514012  0.51745772]
+61,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 1000, 'pca__n_components': 20}",0.5157854669615928,[ 0.5173975   0.51417343]
+62,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 1000, 'pca__n_components': 25}",0.5192652313959838,[ 0.52342566  0.51510481]
+63,"{'clf': XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
+       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=3,
+       min_child_weight=1, missing=nan, n_estimators=100, nthread=-1,
+       objective='binary:logistic', reg_alpha=0, reg_lambda=1,
+       scale_pos_weight=1, seed=0, silent=True, subsample=1), 'clf__max_depth': 10, 'clf__n_estimators': 1000, 'pca__n_components': 30}",0.5222180300886828,[ 0.52469457  0.51974149]
